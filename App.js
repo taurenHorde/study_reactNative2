@@ -56,7 +56,7 @@ export default function App() {
             const newToDos = { ...toDos }
             delete newToDos[key]
             setToDos(newToDos)
-            await saveToDos(newToDos)
+            await saveToDos(newToDos);
           }
         }
       ])
